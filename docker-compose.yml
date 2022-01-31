@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  ktpjs:
+    image: ktpjs-docker
+    build: .
+    ports:
+      - "8020:8020"
+      - "8021:8021"
+      - "8022:8022"

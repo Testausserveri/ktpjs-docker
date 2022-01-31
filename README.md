@@ -1,2 +1,7 @@
 # ktpjs-docker
-KTPJS, in dockerized environment
+Build your own Dockerized KTPJS image
+
+```
+$ docker-compose build
+$ docker-compose up
+```
