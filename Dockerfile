@@ -49,4 +49,4 @@ WORKDIR /var/lib/ktpjs/bin
 EXPOSE 8020
 EXPOSE 8021
 EXPOSE 8022
-CMD ["DATABASE_URL=postgres://postgres@localhost/ktp node /var/lib/ktpjs/bin/ktp"]
+CMD ["NODE_ENV=production DATABASE_URL=postgres://postgres@localhost/ktp node /var/lib/ktpjs/bin/ktp"]
