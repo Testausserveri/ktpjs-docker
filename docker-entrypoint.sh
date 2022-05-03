@@ -6,7 +6,7 @@ if [ -z "$(ls -A "$PGDATA")" ]; then
     sed -ri "s/^#(listen_addresses\s*=\s*)\S+/\1'*'/" "$PGDATA"/postgresql.conf
 
     : ${POSTGRES_USER:="postgres"}
-    : ${POSTGRES_DB:=$POSTGRES_USER÷}
+    : ${POSTGRES_DB:=$POSTGRES_USER}
 
     if [ "$POSTGRES_PASSWORD" ]; then
       pass="PASSWORD '$POSTGRES_PASSWORD'"
